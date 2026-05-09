@@ -1,0 +1,21 @@
+# 1. Create .gitignore
+@"
+mtenv/
+__pycache__/
+*.pyc
+data/raw/
+data/processed/
+.env
+"@ > .gitignore
+
+# 2. Add project files
+git add src requirements.txt .gitignore
+
+# 3. Commit
+git commit -m "Add data generation script"
+
+# 4. Check branch
+git branch -M main
+
+# 5. Push
+git push -u origin main
